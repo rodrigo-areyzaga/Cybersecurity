@@ -1,0 +1,18 @@
+Feb 04, 2026
+
+## Learning Log — Cryptography Foundations 🔐
+
+Today I completed **Cryptography Basics**, **Public Key Cryptography Basics**, and **Hashing Basics** on TryHackMe.
+
+This session focused on understanding the foundations of how data is protected: how encryption transforms information, how public and private keys enable secure communication, and how hashing preserves integrity. What stood out most is how these concepts connect — they are not isolated topics, but parts of a larger system that quietly secures everyday digital life.
+
+### Key concepts reviewed
+
+* Difference between **symmetric and asymmetric encryption**
+* Role of **public and private keys** in secure communication
+* Basic intuition behind **RSA and key exchange**
+* Core properties of **cryptographic hash functions** (determinism, irreversibility, integrity)
+* How hashing supports **data verification and authentication**
+* Practical relevance of cryptography in modern security systems
+
+This entry serves as a marker of progress. Each module completed is another step toward building practical intuition in cybersecurity — moving from abstract ideas to tools I can recognize and eventually apply.
