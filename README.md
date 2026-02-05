@@ -26,5 +26,3 @@ Entries are organized chronologically and grouped by platform or subject area. E
 * Expanding practical cybersecurity skills
 
 ---
-
-*A living archive. A silent witness to progress.*
