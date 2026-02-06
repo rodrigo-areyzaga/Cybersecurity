@@ -16,3 +16,30 @@ This session focused on understanding the foundations of how data is protected: 
 * Practical relevance of cryptography in modern security systems
 
 This entry serves as a marker of progress. Each module completed is another step toward building practical intuition in cybersecurity — moving from abstract ideas to tools I can recognize and eventually apply.
+
+## Learning Log — John the Ripper Fundamentals
+
+**Platform:** TryHackMe
+**Date:** Feb 5, 2026
+
+### Summary
+
+Completed the *Introduction*, *Basic Terms*, *Setting Up Your System*, and *Cracking Basic Hashes* modules focused on John the Ripper. This session emphasized hands-on hash cracking and the importance of correctly identifying hash formats before attempting attacks.
+
+### Key concepts reviewed
+
+* Core terminology and workflow of **John the Ripper**
+* Environment setup for password cracking tasks
+* Identifying hash types before running cracking attempts
+* Using external tools (e.g., hash identifier resources) to verify formats
+* Practical use of John with the correct `--format` option
+
+### Reflection
+
+The final whirlpool hash took a long time to crack because I initially ran John with an incorrect format (SHA-512, cryptosafe). Spending hours without results was frustrating, but it pushed me to investigate methodically. Instead of copying solutions, I searched for clues and discovered a hash identification resource that helped me confirm the correct format. Running John with `--format=whirlpool` resolved the issue.
+
+The main lesson: skimming terminal output is a liability at this stage. Careful observation and thoroughness matter more than speed. Precision builds proficiency — speed follows later.
+
+---
+
+*A silent marker of progress. Ask me anything.*
