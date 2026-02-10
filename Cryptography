@@ -44,4 +44,39 @@ The main lesson: skimming terminal output is a liability at this stage. Careful 
 
 ---
 
+## Learning Log — John the Ripper: The Basics (Completion)
+
+**Platform:** TryHackMe
+**Date:** Feb 10, 2026
+**Difficulty:** Beginner → Intermediate
+**Time spent:** ~2 hours (including troubleshooting)
+
+### Summary
+
+Completed Tasks 5–12 of *John the Ripper: The Basics*, expanding hands-on experience with password cracking across multiple real-world formats. This session reinforced how different authentication systems store credentials and how John adapts to each case. I’m still developing intuition around hash identification, but the fundamentals are starting to connect — and that emphasis on *basics* feels intentional. This was genuinely enjoyable work: seeing behind the scenes of password security makes the learning feel tangible and motivating.
+
+### Key concepts reviewed
+
+* Cracking **Windows authentication hashes**
+* Working with **/etc/shadow password hashes**
+* Using **Single Crack Mode**
+* Creating and applying **custom rules**
+* Cracking **password-protected ZIP archives**
+* Cracking **password-protected RAR archives**
+* Cracking **SSH keys with John**
+* Exploring additional references and further reading
+
+### Reflection
+
+Hash identification remains the area that needs the most repetition, but progress is visible. Each exercise strengthens pattern recognition and workflow familiarity. There’s a real sense of momentum — learning how password systems work from the inside is both technically engaging and deeply satisfying. With this module complete, I’m moving forward to the next challenge: *Moniker Link*, which is still unknown territory and part of the appeal.
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 3/5
+
+---
+
 *A silent marker of progress. Ask me anything.*
