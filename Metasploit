@@ -78,3 +78,48 @@ The focus remains on fundamentals and disciplined progression.
 ---
 
 *A silent marker of progress. Ask me anything.*
+
+## Learning Log — Metasploit: Exploitation (Modules 1–2)
+
+**Platform:** TryHackMe
+**Date:** 2026-02-23
+**Difficulty:** Intermediate (foundational but dense)
+**Time spent:** [~60 minutes]
+
+### Summary
+
+Completed Modules 1–2 of *Metasploit: Exploitation*. This section focused on reconnaissance and service identification using Metasploit and related tools. The concepts are becoming clearer, but the practical application still requires deliberate focus and repetition.
+
+This module reinforced that offensive security is not about flashy exploits — it’s about systematic enumeration.
+
+### Key concepts reviewed
+
+* **Port scanning fundamentals**
+* Basic usage of **Nmap** (still refining understanding of flags and outputs)
+* **UDP service identification** using Metasploit modules (e.g., `udp_sweep`)
+* Understanding the difference between TCP and UDP scanning behavior
+* Exploring and selecting appropriate **SMB scanning modules**
+* Narrowing down the correct module among many available options
+
+### Reflection
+
+Port scanning feels conceptually straightforward, but mastering tools like Nmap requires more depth than expected. Understanding flags, scan types, and interpreting output takes repetition.
+
+UDP service identification makes logical sense — because UDP is connectionless, detection relies on sending specific probes and analyzing responses — but the mechanics are still a bit fuzzy. For now, I can execute the process by following structured steps. True fluency will come with battle testing and repetition.
+
+SMB scanning revealed how vast the Metasploit module ecosystem is. Selecting the correct module required research and narrowing down options, which reinforced the importance of understanding context rather than blindly running tools.
+
+Bottom line: it’s tough. Not discouraging — just tough.
+
+Each task demands time and focus, but the sense of accomplishment at the end is uniquely satisfying. Alongside that accomplishment, the awareness of responsibility continues to grow. Not as a burden — but as calibration.
+
+### Learning Signals
+
+* **Effort:** 4/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
