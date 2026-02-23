@@ -37,3 +37,44 @@ Capability without discipline is dangerous. Capability with responsibility is pr
 ---
 
 *A silent marker of progress. Ask me anything.*
+
+## Learning Log — Metasploit Introduction (Modules 4–5 Completion)
+
+**Platform:** TryHackMe
+**Date:** 2026-02-13
+**Difficulty:** Beginner → Intermediate
+**Time spent:** [15 minutes]
+
+### Summary
+
+Completed Modules 4–5 of the *Metasploit Introduction*, finishing the room. This section expanded on practical usage of the framework, reinforcing workflow familiarity and module interaction.
+
+Compared to earlier modules in other topics, this one felt smoother and more intuitive. The structure of Metasploit is starting to make sense at a high level, though it’s clear this only scratches the surface of what’s possible.
+
+### Key concepts reviewed
+
+* Practical interaction with Metasploit modules
+* Running and configuring exploits and payloads
+* Understanding how framework components interact
+* Awareness of operational boundaries and responsible use
+
+### Reflection
+
+This module felt easier to navigate than previous topics — likely because the framework logic is becoming more familiar. That said, it’s obvious how much depth still lies ahead.
+
+The ethical dimension remains present. The line between legal research and illegal misuse is clear in theory, but I suspect true understanding will come with real-world exposure in structured environments like bug bounty platforms.
+
+Not there yet. Today.
+
+The focus remains on fundamentals and disciplined progression.
+
+### Learning Signals
+
+* **Effort:** 2/5
+* **Clarity:** 3/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
