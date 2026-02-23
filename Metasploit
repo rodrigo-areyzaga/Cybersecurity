@@ -1,0 +1,39 @@
+## Learning Log — Metasploit Introduction (Modules 1–3)
+
+**Platform:** TryHackMe
+**Date:** 2026-02-23
+**Difficulty:** Beginner → Intermediate
+**Time spent:** [30 minutes]
+
+### Summary
+
+Completed Modules 1–3 of the *Metasploit Introduction*. This section explored the fundamentals of the Metasploit Framework, its structure, capabilities, and workflow within penetration testing environments.
+
+What stands out immediately is the sheer depth of the framework. The volume of modules, payloads, and exploit capabilities highlights both its technical power and its potential impact when misused.
+
+### Key concepts reviewed
+
+* Overview of the **Metasploit Framework**
+* Understanding **modules** (exploit, auxiliary, payload, etc.)
+* Basic framework navigation and workflow
+* The role of Metasploit in vulnerability exploitation
+* Awareness of legal and ethical boundaries in offensive security
+
+### Reflection
+
+This introduction carries a weight I did not anticipate when starting my cybersecurity journey. Tools like Metasploit are powerful — and that power comes with responsibility. The line between legal research and illegal misuse is defined not by capability, but by intent and authorization.
+
+Because this is only the beginning of the module, I’ll refrain from drawing broader conclusions. For now, the focus remains on learning the fundamentals correctly and understanding the ethical framework surrounding offensive security.
+
+Capability without discipline is dangerous. Capability with responsibility is professional.
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
