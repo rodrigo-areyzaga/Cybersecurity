@@ -123,3 +123,57 @@ Each task demands time and focus, but the sense of accomplishment at the end is 
 ---
 
 *A silent marker of progress. Ask me anything.*
+
+## Learning Log — Metasploit: Exploitation (msfvenom)
+
+**Platform:** TryHackMe
+**Date:** 2026-03-06
+**Difficulty:** Intermediate
+**Time spent:** ~1 week
+
+### Summary
+
+Completed the **msfvenom** chapter of *Metasploit: Exploitation*. This section focused on generating payloads and understanding how they are crafted, delivered, and executed within a testing environment.
+
+While the technical steps were manageable, the real challenge came from slowing down enough to understand each stage rather than rushing through commands.
+
+### Key concepts reviewed
+
+* Generating payloads with **msfvenom**
+* Understanding payload formats and delivery methods
+* Following exploitation workflow step-by-step
+* Using outputs to retrieve required hashes during exercises
+* Interpreting results rather than blindly executing commands
+
+### Reflection
+
+This module took longer than expected — about a week — largely because it forced me to confront something internal: **patience**.
+
+Earlier attempts involved moving too quickly, running commands without fully processing what each step was doing. Progress only came when I slowed down, read everything carefully, and worked through the process deliberately.
+
+Even then, I leaned on AI assistance to help visualize and fully understand some of the steps required to retrieve the final hash. That support helped connect the conceptual dots.
+
+The real takeaway from this module wasn’t speed or tool mastery.
+
+It was this:
+
+> **Patience and consistency outperform speed.**
+
+Focused, deliberate work leads to understanding. Rushing only creates noise.
+
+This ended up being less of a technical breakthrough and more of a personal one — learning to work with my own imperfections rather than against them.
+
+A tough module, but a meaningful one.
+
+On to the next.
+
+### Learning Signals
+
+* **Effort:** 4/5
+* **Clarity:** 3/5
+* **Frustration:** 3/5
+* **Confidence:** 4/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
