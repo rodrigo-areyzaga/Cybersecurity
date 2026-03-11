@@ -177,3 +177,83 @@ On to the next.
 ---
 
 *A silent marker of progress. Ask me anything.*
+
+## Learning Log — Metasploit: Meterpreter
+
+**Platform:** TryHackMe
+**Date:** 2026-03-09
+**Difficulty:** Easy → Intermediate
+**Time spent:** ~2 hours (completed while working)
+
+### Summary
+
+Completed the **Meterpreter** section of *Metasploit: Exploitation*. This lab focused on gaining an initial foothold through SMB using **PsExec**, establishing a **Meterpreter session**, and performing basic post-exploitation activities such as enumeration, credential dumping, password cracking, and file discovery.
+
+The workflow simulated a realistic attacker progression:
+
+**Initial access → Meterpreter session → Enumeration → Credential dumping → Password cracking → Sensitive file discovery**
+
+While the commands themselves were relatively straightforward to execute, the real challenge came from understanding **where each command belongs in the workflow** and which interface should be used (Metasploit console, Meterpreter session, or Windows shell).
+
+### Key concepts reviewed
+
+* Exploiting SMB using `exploit/windows/smb/psexec`
+* Establishing and interacting with a **Meterpreter session**
+* Understanding the difference between **Meterpreter commands** and **Windows shell commands**
+* Enumerating system information (`sysinfo`, `getuid`)
+* Enumerating SMB shares (`net share`)
+* Dumping password hashes using `hashdump`
+* Identifying **NTLM hashes** within SAM output
+* Cracking hashes with **John the Ripper**
+* Searching the filesystem with Meterpreter (`search`)
+* Navigating directories and reading files (`cd`, `ls`, `cat`)
+
+### Reflection
+
+This lab felt mechanically simple but **conceptually layered**.
+
+Running commands was not the challenge. The challenge was understanding **where each command belongs**.
+
+During exploitation there are multiple environments operating simultaneously:
+
+* **Metasploit console**
+* **Meterpreter session**
+* **Windows shell**
+
+Each has its own commands and role in the workflow.
+
+For example:
+
+* **Metasploit console** → launching exploits and managing sessions
+* **Meterpreter** → post-exploitation interaction and system control
+* **Windows shell** → native operating system commands
+
+At several points I caught myself thinking:
+
+> “This command works… but which prompt should it be run from?”
+
+Understanding that separation is becoming clearer with practice.
+
+Another useful reminder came when cracking the **jl user's NTLM hash**. I knew **John the Ripper** was the correct tool, but it had drifted to the back of my mind. Revisiting it reinforced the importance of maintaining familiarity with core tools.
+
+What stood out most in this lab is how quickly privilege and information can escalate once a foothold is established.
+
+Within a short sequence of steps:
+
+* credentials were leveraged
+* hashes were extracted
+* passwords were cracked
+* sensitive files were discovered
+
+Watching that chain unfold makes the attacker workflow feel much more tangible.
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 4/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
