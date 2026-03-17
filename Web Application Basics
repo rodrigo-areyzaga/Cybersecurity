@@ -1,0 +1,48 @@
+## Learning Log — Web Application Basics
+
+**Platform:** TryHackMe
+**Date:** 2026-03-17
+**Difficulty:** Easy (conceptually dense)
+**Time spent:** ~1 hour
+
+### Summary
+
+Completed the *Web Application Basics* module. The lab itself was relatively straightforward to complete, but the breadth of concepts introduced — from how web applications function to how they can be analyzed — made the experience feel more dense than expected.
+
+This module served as an introduction to how web technologies operate beneath the surface, laying the groundwork for future web exploitation and testing.
+
+### Key concepts reviewed
+
+* Structure of a **web application** (client ↔ server interaction)
+* Basics of **HTTP/HTTPS requests and responses**
+* Understanding **URLs, parameters, and query strings**
+* Introduction to **web servers and browsers**
+* Observing how data flows between user and application
+* Initial exposure to how web applications can be analyzed
+
+### Reflection
+
+The lab felt “easy” in terms of execution, but the amount of information introduced created a sense of overwhelm. Not because the concepts are impossible — but because they open the door to a much larger domain.
+
+That feeling led to a moment of hesitation and self-doubt.
+
+But this is part of the process.
+
+Instead of stepping back, the decision is to continue forward.
+
+> I chose this. I will see it through.
+
+This module made it clear that web applications are not just interfaces — they are structured systems with logic, flow, and potential weaknesses. Understanding them will take time, repetition, and patience.
+
+The difficulty here is not complexity of tasks, but **depth of the field**.
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
