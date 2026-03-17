@@ -1,0 +1,129 @@
+## Learning Log — TryHackMe: Blue (MS17-010 EternalBlue)
+
+**Platform:** TryHackMe
+**Date:** 2026-03-17
+**Difficulty:** Easy (conceptually harder than expected)
+**Time spent:** ~2 hours
+
+### Summary
+
+Completed the *Blue* room focused on exploiting the **MS17-010 (EternalBlue)** vulnerability on a Windows 7 machine. This lab walked through a full attack chain:
+
+**Scan → Identify vulnerability → Exploit → Gain shell → Upgrade shell → Post-exploitation → Credential dumping → Enumeration**
+
+While the steps were straightforward when guided, the underlying concepts are still developing. I was able to complete the room, but relied heavily on external guidance to move forward and understand each phase.
+
+### Key concepts reviewed
+
+* Using **Nmap** to identify open ports and services
+* Recognizing **SMB (port 445)** as a key attack surface
+* Understanding the relationship between **Windows 7 + SMB → MS17-010 (EternalBlue)**
+* Using the **Metasploit Framework** to search and execute exploits
+* Difference between a standard shell and a **Meterpreter session**
+* Post-exploitation fundamentals:
+
+  * session management
+  * process migration
+* Windows credential storage:
+
+  * **SAM file**
+  * NTLM hashes
+* Cracking hashes using **John the Ripper**
+* File system enumeration for sensitive data
+
+### Tools used
+
+* Nmap
+* Metasploit Framework
+* John the Ripper
+
+### Challenges
+
+* Difficulty moving from **scan results → selecting the correct exploit** without guidance
+* Still unclear on the practical differences between **Meterpreter vs standard shell**
+* Process migration felt more like trial and error than intentional action
+* Session instability (did not immediately recognize re-exploitation as the correct response)
+* Hash cracking issues:
+
+  * incorrect file formatting
+  * incorrect wordlist path
+  * unintentionally triggering brute-force instead of dictionary attack
+* Enumeration required shifting from guessing to thinking in terms of **user behavior** (Desktop, Documents, etc.)
+
+### Mistakes
+
+* Let John run in **incremental (brute-force)** instead of stopping and correcting the setup
+* Incorrect path for `rockyou.txt` (`usr/...` instead of `/usr/...`)
+* Attempted to fix a dead session instead of re-running the exploit
+* Assumed flags would always be in obvious locations
+* Focused on running commands rather than understanding their purpose
+
+### Lessons learned
+
+* If something takes too long, it’s often the **wrong approach**, not system performance
+* Meterpreter sessions can fail — **re-exploitation is part of the workflow**
+* Always separate:
+
+  * **target machine** (data extraction)
+  * **attacker machine** (analysis/cracking)
+* Enumeration is not guessing — it is:
+
+  > eliminate → adapt → continue
+* Tools do not replace understanding:
+
+  > running commands ≠ knowing what you’re doing
+
+### Reflection
+
+I completed the room, but I don’t feel confident yet.
+
+Most steps required guidance, and I don’t think I could reproduce the full process independently at this stage. However, the overall structure is beginning to form:
+
+* scan
+* identify
+* exploit
+* stabilize access
+* enumerate
+
+Even without full understanding, the pattern is becoming recognizable.
+
+Right now it feels like:
+
+> following instructions instead of thinking independently
+
+But that’s part of the process.
+
+### Next focus
+
+* Improve interpretation of **Nmap results**
+* Learn how to choose exploits based on evidence, not guessing
+* Repeat similar machines to reinforce workflow
+* Reduce reliance on step-by-step guidance
+* Slow down and ask:
+
+  > “Why am I doing this?” before executing commands
+
+### Learning Signals
+
+* **Effort:** 4/5
+* **Clarity:** 2/5
+* **Frustration:** 3/5
+* **Confidence:** 2/5
+
+---
+
+**Final thought**
+
+Completion ≠ mastery.
+
+This wasn’t “I solved it.”
+
+It was:
+
+> “I was exposed to the process for the first time.”
+
+And that’s probably the point.
+
+---
+
+*A silent marker of progress. Ask me anything.*
