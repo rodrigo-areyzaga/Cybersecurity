@@ -1,0 +1,45 @@
+## Learning Log — JavaScript Essentials
+
+**Platform:** TryHackMe
+**Date:** 2026-03-17
+**Difficulty:** Beginner
+**Time spent:** ~1 hour
+
+### Summary
+
+Completed the *JavaScript Essentials* module. The lab itself was straightforward and quick to complete, but introduced some concepts that were unexpectedly insightful — particularly around how JavaScript code can be intentionally obscured.
+
+### Key concepts reviewed
+
+* Basics of **JavaScript structure and execution**
+* Introduction to **code obfuscation**
+* Understanding **deobfuscation techniques**
+* Recognizing how obfuscated code can impact analysis
+* Awareness of how JavaScript can be used in web applications
+
+### Reflection
+
+This module was easy to follow and complete, but still provided an “eye-opening” moment.
+
+I wasn’t previously aware of **code obfuscation and deobfuscation**, and seeing how they work gave me a new perspective. While obfuscation doesn’t stop attackers completely, it can slow them down — and in security, even small delays can matter.
+
+> Every inch counts.
+
+I didn’t particularly enjoy this topic, but I recognize its value. Not every tool needs to be a favorite to be useful.
+
+It’s similar to trying new things — you won’t know if it’s useful until you’re exposed to it.
+
+For now, I’ll treat this as another tool in my toolbox:
+
+> not something I’ll reach for often, but something I’ll keep ready for the right situation.
+
+### Learning Signals
+
+* **Effort:** 2/5
+* **Clarity:** 4/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
