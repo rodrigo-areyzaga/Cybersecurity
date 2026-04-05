@@ -1,0 +1,57 @@
+## Learning Log — SQL Fundamentals
+
+**Platform:** TryHackMe
+**Date:** 2026-04-05
+**Difficulty:** Beginner
+**Time spent:** ~3 hours (with breaks)
+
+### Summary
+
+Completed the *SQL Fundamentals* module, covering core database concepts and query operations. The material progressed from basic database structure to more practical querying techniques, including CRUD operations, clauses, operators, and functions.
+
+Overall, the module went smoothly, with the exception of the final questions in the **Functions** section, which required more effort and highlighted areas that need further practice.
+
+### Key concepts reviewed
+
+* Introduction to **databases** and relational structures
+* Basic **SQL syntax and query structure**
+* Creating and modifying databases and tables
+* **CRUD operations** (Create, Read, Update, Delete)
+* Using **clauses** to filter and organize data
+* Applying **operators** in queries
+* Introduction to **SQL functions** and their use cases
+
+### Tasks completed
+
+* Task 1 — Introduction
+* Task 2 — Databases 101
+* Task 3 — SQL
+* Task 4 — Database and Table Statements
+* Task 5 — CRUD Operations
+* Task 6 — Clauses
+* Task 7 — Operators
+* Task 8 — Functions
+* Task 9 — Conclusion
+
+### Reflection
+
+This module felt approachable overall, but the **Functions** section exposed gaps in my understanding — particularly around syntax and practical application. More repetition is needed there.
+
+The session took around 3 hours, though not in a continuous stretch. Coming off a demanding week, I found myself taking more breaks than usual. Even so, I stayed consistent and saw it through.
+
+> Progress doesn’t require perfect conditions — just continuation.
+
+Another takeaway: **patience** continues to be a recurring theme. Slowing down and working through syntax carefully makes a noticeable difference.
+
+Despite the breaks and friction points, the experience remained positive — especially given how relevant SQL is for understanding and interacting with data in real-world systems.
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
