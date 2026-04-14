@@ -1,0 +1,50 @@
+## Learning Log — Burp Suite: The Basics
+
+**Platform:** TryHackMe
+**Date:** 2026-04-14
+**Difficulty:** Beginner → Intermediate
+**Time spent:** ~2+ hours
+
+### Summary
+
+Completed the *Burp Suite: The Basics* module. This chapter introduced the core functionality of Burp Suite as a web application testing tool, focusing on intercepting, inspecting, and modifying HTTP traffic between the client and server.
+
+While the tasks themselves were not particularly difficult, the exposure to what Burp Suite is capable of made a strong impression.
+
+### Key concepts reviewed
+
+* Understanding Burp Suite as an **intercepting proxy**
+* Capturing and analyzing **HTTP requests and responses**
+* Using the **Proxy** tab to intercept and modify traffic
+* Replaying and manipulating requests
+* Observing how web applications handle input and responses
+
+### Reflection
+
+This module was straightforward in execution, but impactful in perspective.
+
+Seeing how easily web traffic can be intercepted and modified was both **interesting and slightly unsettling**. It feels like only the surface has been scratched, yet the capability already seems significant.
+
+> A lot of power — and with it, responsibility.
+
+That awareness continues to grow with each new tool introduced.
+
+Despite a heavy schedule — balancing a Cisco certification, term exams, and R&D testing at work — I was able to stay consistent and complete the module. It took a couple of hours, partly due to fatigue, but the process remained engaging.
+
+The overall feeling is a mix of:
+
+* **Excitement** for what’s ahead
+* **Humility** in recognizing how much there is still to learn
+
+And that balance feels right.
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
