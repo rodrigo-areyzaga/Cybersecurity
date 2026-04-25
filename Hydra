@@ -1,0 +1,49 @@
+## Learning Log — Hydra
+
+**Platform:** TryHackMe
+**Date:** 2026-04-18
+**Difficulty:** Beginner
+**Time spent:** ~1–2 hours
+
+### Summary
+
+Completed the *Hydra* module. The lab introduced the use of Hydra as a tool for performing password attacks against various services. The mechanics were straightforward, but the experience highlighted both the power of the tool and the importance of consistent practice.
+
+### Key concepts reviewed
+
+* Using **Hydra** for password attacks
+* Understanding **brute-force vs dictionary attacks**
+* Targeting different services (e.g., SSH, HTTP, etc.)
+* Structuring Hydra commands and syntax
+* Importance of wordlists in password attacks
+
+### Reflection
+
+This module felt easy at first — like doing pushups for the first time.
+
+At the beginning, everything feels manageable. But as you continue, the strain builds. What started as simple quickly exposes gaps.
+
+Today, that gap showed up clearly.
+
+I struggled to recall basic commands like `find` and `cat`. Not because they’re difficult, but because I’ve been inconsistent. Work, college, and other commitments pulled my focus away — and it showed.
+
+That’s not just an observation. It’s a lesson:
+
+> This requires consistency. Not occasional effort.
+
+You can’t put this aside for a while and expect to return at the same level. Skills fade without repetition.
+
+No grand gestures. Just steady work.
+
+As for Hydra itself — like many tools in this journey — it feels powerful, even a bit dangerous. In the right hands, though, it becomes a precise instrument.
+
+### Learning Signals
+
+* **Effort:** 2/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 3/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
