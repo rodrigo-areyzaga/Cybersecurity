@@ -1,0 +1,46 @@
+## Learning Log — Gobuster: The Basics
+
+**Platform:** TryHackMe
+**Date:** 2026-05-19
+**Difficulty:** Beginner
+**Time spent:** ~1 hour
+
+### Summary
+
+Completed the *Gobuster: The Basics* module. This room introduced Gobuster as a tool for discovering hidden directories, files, and virtual hosts on web servers through wordlist-based enumeration.
+
+The concepts themselves were straightforward, but the command structure and syntax required more attention than expected.
+
+### Key concepts reviewed
+
+* Introduction to **directory and file enumeration**
+* Using **Gobuster** against web targets
+* Understanding the role of **wordlists**
+* Basic usage of:
+
+  * directory brute forcing
+  * virtual host enumeration
+* Interpreting Gobuster results and status codes
+
+### Reflection
+
+This module felt relatively simple conceptually, but the syntax itself felt dense.
+
+Gobuster is one of those tools where a small mistake in flags, paths, or formatting can completely change the result. The challenge was less about understanding *what* the tool does and more about remembering *how* to structure commands correctly.
+
+> Complex syntax. Simple purpose.
+
+The room also reinforced how important enumeration is within cybersecurity. Sometimes the goal is not exploitation itself, but uncovering what should not be visible in the first place.
+
+Another reminder that tools are only as effective as the precision behind their use.
+
+### Learning Signals
+
+* **Effort:** 2/5
+* **Clarity:** 3/5
+* **Frustration:** 2/5
+* **Confidence:** 2/5
+
+---
+
+*A silent marker of progress. Ask me anything.*
