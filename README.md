@@ -8,7 +8,7 @@ A structured archive of my cybersecurity education — documenting the path from
 
 Studying authorization failures, API security, and OWASP A01 eventually turned into building something.
 
-**[accguard](https://github.com/rodrigo-areyzaga/accguard)** — an open-source authorization regression testing tool that automatically detects IDOR/BOLA vulnerabilities by replaying authenticated test traffic with a second user's token. Built in Node.js, zero dependencies, runs in CI.
+**[accguard](https://github.com/rodrigo-areyzaga/accguard)** — an open-source authorization regression testing tool that automatically detects IDOR/BOLA vulnerabilities by replaying authenticated test traffic with a second user's token. Built in Node.js with zero external dependencies and designed for CI workflows.
 
 The learning log below is the foundation that made that project possible.
 
@@ -64,7 +64,7 @@ Entries are organized chronologically and grouped by platform or subject area. E
 
 ## Background
 
-6+ years in QA engineering across console, PC, and mobile platforms. The transition into cybersecurity is deliberate — quality engineering and security engineering share the same core skill: finding the ways a system fails before someone else does.
+6+ years in QA engineering across console, PC, and mobile platforms. The transition into cybersecurity is deliberate — quality engineering and security engineering both depend on understanding how systems fail before those failures reach production.
 
 ---
 
