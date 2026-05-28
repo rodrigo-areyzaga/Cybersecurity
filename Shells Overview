@@ -1,0 +1,73 @@
+Learning Log — Shells Overview
+
+Platform: TryHackMe
+Date: 2026-05-27
+Difficulty: Beginner–Intermediate
+Time spent: <1 hour for theory / ~3 days applying and troubleshooting while balancing work + degree
+
+Summary
+
+Completed the Shells Overview module. The room introduced the fundamentals of reverse shells, bind shells, and web shells, followed by practical exploitation of command injection and unrestricted file upload vulnerabilities.
+
+The theory itself was relatively quick to understand. The real challenge came from connecting all the moving parts together:
+
+listeners
+payloads
+networking
+shell execution
+file uploads
+command injection syntax
+
+What initially looked simple became far more real once the shell actually connected back.
+
+Key concepts reviewed
+Understanding the difference between:
+reverse shells
+bind shells
+web shells
+Exploiting command injection vulnerabilities
+Exploiting unrestricted file upload vulnerabilities
+Using Netcat as a listener
+Basic shell payload structure
+Executing commands through uploaded web shells
+Locating sensitive files and flags after exploitation
+Understanding how remote code execution can occur through unsafe input handling
+Reflection
+
+This room left a bigger impression on me than I expected.
+
+The technical side was important, but the emotional reaction was what stood out most. There’s a major difference between reading about vulnerabilities and actually seeing a shell connect successfully for the first time.
+
+That moment changes things.
+
+What surprised me most was not the complexity, but the simplicity behind some of these attacks. In controlled lab environments, a single unsafe assumption can completely compromise a system.
+
+That realization was both fascinating and unsettling.
+
+Small assumptions. Massive consequences.
+
+At the same time, this room helped reinforce an important perspective:
+security is not just about exploitation — it’s about understanding fragile trust boundaries and why defensive guardrails matter so much.
+
+The experience also made me appreciate modern defensive practices more deeply:
+
+input validation
+restricted uploads
+non-executable directories
+sandboxing
+monitoring
+proper authorization controls
+
+As I progress, every step feels humbling. The deeper I go, the more I realize how much there is to learn — and how much responsibility comes with that knowledge.
+
+Still looking forward to what comes next:
+
+SQLMAP: The Basics
+
+Learning Signals
+Effort: 3/5
+Clarity: 2/5
+Frustration: 3/5
+Confidence: 2/5
+
+A silent marker of progress. Ask me anything.
