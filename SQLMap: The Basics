@@ -1,0 +1,81 @@
+Learning Log — SQLMap: SQL Injection & Database Enumeration
+
+Platform: TryHackMe
+Date: 2026-06-02
+Difficulty: Beginner–Intermediate
+Time spent: ~1.5 hours
+
+Summary
+
+Completed a SQLMap-focused lab involving SQL injection discovery, database enumeration, and credential extraction against a vulnerable web application.
+
+The room focused on identifying injectable parameters, understanding how SQLMap automates exploitation, and using enumeration techniques to extract databases, tables, and user credentials from a MariaDB/MySQL backend.
+
+What stood out most was seeing how quickly a single vulnerable parameter can escalate into full database visibility when proper input validation and security controls are missing.
+
+Key Concepts Reviewed
+Automated SQL injection testing with SQLMap
+Identifying vulnerable GET parameters
+Boolean-based blind SQL injection
+Error-based SQL injection
+Time-based blind SQL injection
+Database enumeration using:
+--dbs
+--tables
+--columns
+--dump
+Understanding scan depth and testing intensity with:
+--level
+--risk
+Backend fingerprinting:
+MariaDB/MySQL
+Apache
+Extracting:
+current database
+current DB user
+table names
+credentials
+Workflow
+
+Target analysis → SQL injection discovery → DBMS fingerprinting → Database enumeration → Table discovery → Column enumeration → Credential dumping
+
+Commands Used
+sqlmap -u 'http://TARGET/ai/includes/user_login?email=test&password=test' --dbs --level=5
+sqlmap -u 'http://TARGET/ai/includes/user_login?email=test&password=test' -D ai --tables --level=5
+sqlmap -u 'http://TARGET/ai/includes/user_login?email=test&password=test' -D ai -T users --columns --level=5
+sqlmap -u 'http://TARGET/ai/includes/user_login?email=test&password=test' -D ai -T users -C email,password --dump --level=5
+Reflection
+
+This lab made SQL injection feel much more tangible.
+
+Before this, SQL injection mostly existed in my head as one of those vulnerabilities everyone talks about constantly, but seeing SQLMap identify multiple injection types and progressively expose the backend structure made the impact much clearer.
+
+What surprised me most was how quickly automation changes the scale of a vulnerability once an entry point exists.
+
+One injectable parameter exposed:
+
+backend technologies
+database information
+table structures
+current DB user
+user credentials
+
+This also connected strongly with ideas I’ve been thinking about while building accguard.
+
+Even though Broken Access Control and SQL Injection are different vulnerability classes, the underlying lesson feels similar: once trust boundaries fail, automation can massively amplify impact. A small weakness can quickly become broad unintended access.
+
+Another important takeaway was realizing that understanding the flags matters just as much as running the tool itself. SQLMap automates exploitation, but understanding why --dbs, --tables, --columns, --dump, --level, and --risk exist makes the process far more meaningful.
+
+The technical concepts themselves were manageable, but staying patient while reading the output carefully mattered a lot. Skimming terminal output usually creates confusion later.
+
+One vulnerable parameter can become full database visibility faster than expected.
+
+Learning Signals
+Improved understanding of SQL injection workflows
+Better familiarity with SQLMap enumeration techniques
+Stronger understanding of backend fingerprinting
+Reinforced the importance of secure input validation and parameterized queries
+Continued building confidence in web application security fundamentals
+More awareness of how automation changes the impact of vulnerabilities
+
+Consistency over speed. Thoroughness over guessing.
