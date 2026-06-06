@@ -1,0 +1,73 @@
+Learning Log — SOC Fundamentals
+
+Platform: TryHackMe
+Date: 2026-06-06
+Difficulty: Beginner
+Time spent: ~1 hour
+
+Summary
+
+Completed a foundational SOC (Security Operations Center) lab focused on understanding how security teams monitor, detect, triage, and respond to threats in real-world environments.
+
+The room introduced the structure and responsibilities of a SOC, the role of analysts across different tiers, and the importance of visibility, alerting, and incident response workflows in modern security operations.
+
+What stood out most was realizing how much of security depends on correlation and context rather than isolated events. A single log entry often means very little on its own, but patterns across systems can reveal compromise, misuse, or active attacks.
+
+Key Concepts Reviewed
+Purpose and structure of a Security Operations Center (SOC)
+SOC analyst tiers:
+Tier 1 — Monitoring & triage
+Tier 2 — Investigation & analysis
+Tier 3 — Threat hunting & advanced response
+Security monitoring workflows
+Log collection and event analysis
+Alert triage and escalation
+Incident response fundamentals
+SIEM concepts
+Indicators of Compromise (IOCs)
+Threat detection lifecycle
+Importance of documentation and communication during incidents
+Workflow
+
+Event monitoring → Alert generation → Triage → Investigation → Escalation → Incident response → Documentation
+
+Reflection
+
+This room helped connect many individual security concepts into a larger operational picture.
+
+A lot of learning material focuses on vulnerabilities or exploitation in isolation, but SOC work highlights something different: understanding behavior over time and identifying meaningful signals inside large amounts of noisy data.
+
+One thing that became clearer during this lab is how important structured telemetry becomes once environments scale. Detection is rarely about a single event — it’s about patterns, correlations, and deviations from expected behavior.
+
+This also connected interestingly with ideas I’ve been exploring while building accguard.
+
+Even though accguard focuses on authorization regression testing rather than SOC operations directly, the underlying principle feels related: generating actionable security signals from real application behavior.
+
+In a SOC context:
+
+logs become signals
+correlations become alerts
+patterns become investigations
+
+In accguard:
+
+authenticated traffic becomes test material
+replay analysis becomes detection
+authorization inconsistencies become findings
+
+Different domains, but similar thinking:
+understanding how systems behave, identifying where trust breaks down, and turning that into something observable and actionable.
+
+Another takeaway was appreciating how important communication and process are in security operations. Technical knowledge matters, but consistency, documentation, and disciplined investigation seem just as critical.
+
+Security operations is less about isolated events and more about understanding behavior at scale.
+
+Learning Signals
+Better understanding of SOC structure and responsibilities
+Improved awareness of incident response workflows
+Stronger understanding of SIEM and monitoring concepts
+More appreciation for log analysis and event correlation
+Reinforced the importance of actionable security telemetry
+Continued building a systems-oriented AppSec mindset
+
+Consistency over speed. Thoroughness over guessing.
