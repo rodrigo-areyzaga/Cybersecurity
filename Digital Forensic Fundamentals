@@ -1,0 +1,96 @@
+# Learning Log — Digital Forensics Fundamentals
+
+**Platform:** TryHackMe
+**Date:** 2026-06-07
+**Difficulty:** Beginner
+**Time spent:** ~1–2 hours
+
+## Summary
+
+Completed a foundational digital forensics lab focused on the principles and methodologies used to investigate security incidents and preserve digital evidence.
+
+The room introduced concepts such as evidence collection, chain of custody, timeline reconstruction, and evidence integrity. More importantly, it provided a different perspective on cybersecurity itself.
+
+Many security topics focus on prevention or detection. Digital forensics begins after something has already happened and asks a different question:
+
+> **What happened here?**
+
+That shift in perspective was the most interesting part of the room.
+
+## Key Concepts
+
+* Chain of custody
+* Evidence integrity
+* Timeline reconstruction
+* Evidence collection and preservation
+* Investigation and reporting workflows
+
+## Workflow
+
+Evidence identification → Collection → Preservation → Examination → Analysis → Timeline reconstruction → Reporting
+
+## Reflection
+
+This room was one of the more thought-provoking ones I've completed so far.
+
+The technical concepts were interesting, but what stayed with me most was the mindset behind digital forensics.
+
+Rather than asking:
+
+> *How do I exploit this?*
+
+or
+
+> *How do I detect this?*
+
+forensic work asks:
+
+> *What happened here?*
+
+There is something compelling about reconstructing events from fragments of evidence and building an accurate picture of the past from incomplete information.
+
+The room also made me reflect on my own cybersecurity journey.
+
+For a long time, offensive security and Red Teaming have held my attention. There is still something fascinating about understanding how systems break, how attackers think, and how security controls fail under pressure.
+
+At the same time, building **accguard** introduced me to a different side of security. Instead of focusing on exploitation itself, I found myself thinking about verification, evidence, trust boundaries, and how security findings can be made repeatable and observable.
+
+This room reinforced that feeling.
+
+The more I learn, the less cybersecurity feels like a collection of separate disciplines and the more it feels like a connected ecosystem. Detection engineering, application security, digital forensics, incident response, threat hunting, and offensive security all seem to be examining different facets of the same problem.
+
+The questions that kept coming back to me while working through this room were:
+
+> **What happened?**
+>
+> **What should have happened?**
+>
+> **How do we know?**
+>
+> **How can we prove it?**
+
+The more I think about it, the more those questions seem to sit underneath nearly every area of cybersecurity.
+
+A forensic investigator reconstructs events.
+
+A SOC analyst correlates evidence.
+
+A detection engineer validates signals.
+
+An application security engineer verifies assumptions.
+
+A red teamer tests whether those assumptions survive contact with reality.
+
+Different perspectives. Similar questions.
+
+I don't know exactly where this path leads yet.
+
+Red Teaming still captures my imagination. Building security tools has opened doors I never expected. Digital forensics introduced yet another perspective that I found surprisingly engaging.
+
+More than anything, this room left me with a sense of curiosity about what still lies ahead.
+
+> The deeper I go into cybersecurity, the less certain I am about the destination—and the more curious I become about the journey.
+
+---
+
+*Consistency over speed. Thoroughness over guessing.*
