@@ -1,0 +1,107 @@
+## Learning Log — TryHackMe: Logs Fundamentals
+
+**Platform:** TryHackMe
+**Date:** 2026-07-08
+**Difficulty:** Easy
+**Time spent:** ~1 hour
+
+### Summary
+
+Completed the *Logs Fundamentals* room focused on understanding what logs are, why they matter, and how they can be used during an investigation.
+
+This room introduced logs as a source of evidence rather than just system output. The main workflow was straightforward:
+
+**Identify relevant log source → Search by event/log entry → Extract targeted information → Answer investigation questions**
+
+The room was guided, and the exercises were clear. That made the process accessible, but still useful as a first step into understanding how logs support investigation work.
+
+### Key concepts reviewed
+
+* What logs are and why systems generate them
+* How logs support investigation and incident analysis
+* Using **Windows Event Viewer** to inspect system activity
+* Understanding that specific **Event IDs** point to specific types of activity
+* Searching through event records to find targeted information
+* Using the **Linux terminal** to inspect and analyze log data
+* Treating logs as evidence that can help reconstruct what happened
+
+### Tools used
+
+* Windows Event Viewer
+* Linux Terminal
+
+### Challenges
+
+* Going back and forth between **Event IDs** to identify the right records
+* Searching through the identified logs to find the exact information needed
+* Staying focused on the question being asked instead of reading logs passively
+* Understanding that the value is not just opening a log, but knowing what to look for inside it
+
+### Mistakes
+
+No major mistakes in this room.
+
+That was partly because the room was guided and the exercises were structured clearly. The challenge was less about getting stuck and more about building familiarity with the process of finding targeted information inside logs.
+
+### Lessons learned
+
+* Logs are not just background system noise — they are investigation evidence
+
+* Event IDs matter because they narrow the search space
+
+* Log analysis is not about reading everything line by line
+
+* The better approach is:
+
+  > question → relevant log source → relevant event → targeted detail
+
+* Windows Event Viewer is easier to understand when treated as an evidence browser
+
+* The Linux terminal is useful for searching through log data more directly
+
+* A good investigation depends on knowing where to look, not just having access to data
+
+### Reflection
+
+This room felt like a step forward.
+
+It was not difficult, and it was guided, but it helped make the relevance of logs more concrete. Before this, logs felt like something systems produced in the background. After this room, they feel more like a record of activity that can be searched, filtered, and interpreted.
+
+The important shift was understanding that logs are not useful just because they exist.
+
+They become useful when there is a question.
+
+In this room, the question guided the search. The Event ID narrowed the path. The log entry provided the evidence.
+
+That is a small but important step toward thinking more like an analyst.
+
+### Next focus
+
+* Continue practicing Windows Event Viewer navigation
+* Get more familiar with common Windows Event IDs
+* Practice reading logs with a specific investigation question in mind
+* Improve speed when searching through logs
+* Keep building the habit of asking:
+
+  > “What evidence am I trying to find?”
+
+### Learning Signals
+
+* **Effort:** 2/5
+* **Clarity:** 4/5
+* **Frustration:** 1/5
+* **Confidence:** 4/5
+
+---
+
+**Final thought**
+
+Logs are not the answer by themselves.
+
+They are the trail.
+
+The work is learning how to follow it.
+
+---
+
+*A silent marker of progress. Ask me anything.*
