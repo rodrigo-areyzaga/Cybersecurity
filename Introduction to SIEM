@@ -1,0 +1,124 @@
+## Learning Log — TryHackMe: Introduction to SIEM
+
+**Platform:** TryHackMe
+**Date:** 2026-07-14
+**Difficulty:** Introductory
+**Time spent:** ~1 hr
+
+### Summary
+
+Completed the *Introduction to SIEM* room, focused on the fundamentals of **Security Information and Event Management** and the features commonly associated with SIEM platforms.
+
+The room introduced how SIEM systems collect logs from multiple sources, centralize the information, and help security teams search, monitor, and respond to activity across an environment.
+
+There was no part that felt particularly difficult or particularly easy.
+
+It was another step in the ladder.
+
+### Key concepts reviewed
+
+* The purpose of a **SIEM**
+* Centralized collection of logs from multiple systems
+* Difference between **logs** and **events**
+* Searching and filtering security data
+* Correlating activity from different sources
+* Using dashboards to monitor an environment
+* Creating alerts based on defined conditions
+* Supporting security investigations with collected evidence
+* The role of automation in handling large volumes of log data
+
+### Tools used
+
+* TryHackMe browser-based lab environment
+* Simulated SIEM interface
+
+### Challenges
+
+There were no significant practical challenges during the room.
+
+The larger challenge was conceptual.
+
+The volume of logs produced by modern systems makes automation understandable. No person can manually inspect every event from every device, application, account, and network connection.
+
+However, it raised a question about what that automation is being asked to do.
+
+There is a difference between:
+
+* automatically collecting and organizing evidence
+* automatically applying deterministic rules
+* attempting to infer behavior, risk, or intent
+
+Those are not the same function.
+
+### Mistakes
+
+No significant mistakes were made during the room.
+
+The material was introductory and guided, so the focus was primarily on understanding the role of a SIEM rather than independently configuring or operating one.
+
+### Lessons learned
+
+* A SIEM provides a centralized place to collect and examine security information
+* Logs become more useful when they can be searched and compared across multiple systems
+* Alerts help reduce the amount of information an analyst must inspect manually
+* Automation is necessary when the volume exceeds what people can reasonably process
+* Collecting evidence and interpreting evidence are different problems
+* More automation does not automatically produce more certainty
+
+### Reflection
+
+This room left me with a question.
+
+It seems that a large part of cybersecurity today relies on automation. Given the amount of information contained in logs, I understand why.
+
+The volume is unreasonable for manual review.
+
+But automation is increasingly being developed not only to collect, filter, or match defined conditions, but also to learn behavior and infer intent.
+
+Why?
+
+I understand the scale of the problem, but there has to be a better way than continuously adding more interpretation between the evidence and the person responsible for making a decision.
+
+I do not pretend to have this figured out.
+
+I may be missing important pieces of the problem, especially at the scale where SIEM systems are actually used.
+
+Still, completing this room made my belief in going against the grain stronger.
+
+Not because automation is unnecessary.
+
+Because I think there is value in asking what should remain deterministic, what truly requires interpretation, and whether the amount of data being produced is itself part of the problem.
+
+### Next focus
+
+* Continue learning how SIEM platforms are used in practice
+* Understand how detection rules are created
+* Learn how logs from different systems are normalized and correlated
+* Explore the difference between rule-based alerts and behavior-based detection
+* Pay attention to where deterministic analysis ends and interpretation begins
+* Continue asking:
+
+  > “What evidence produced this conclusion?”
+
+### Learning Signals
+
+* **Effort:** 1/5
+* **Clarity:** 4/5
+* **Frustration:** 1/5
+* **Confidence:** 4/5
+
+---
+
+**Final thought**
+
+This room did not provide an answer.
+
+It exposed a question:
+
+> How much of cybersecurity automation should organize evidence, and how much should be trusted to interpret it?
+
+For now, I am not convinced that more inference is always the answer.
+
+---
+
+*A silent marker of progress. Ask me anything.*
