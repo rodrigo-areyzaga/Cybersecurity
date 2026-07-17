@@ -1,0 +1,174 @@
+## Learning Log — TryHackMe: Firewall Fundamentals
+
+**Platform:** TryHackMe
+**Date:** 2026-07-17
+**Difficulty:** Easy
+**Time spent:** ~30 minutes
+
+### Summary
+
+Completed the *Firewall Fundamentals* room, focused on the purpose of firewalls, common firewall types, rule construction, and hands-on use of the built-in firewalls available in Windows and Linux.
+
+The room covered:
+
+**Purpose → Types → Rules → Windows Defender Firewall → Linux `iptables`**
+
+The practical portions were straightforward. Neither Windows Defender Firewall nor `iptables` presented any significant difficulty.
+
+The rules section, however, raised a larger question about how network access is described and understood.
+
+### Key concepts reviewed
+
+* The purpose of a **firewall**
+* Controlling inbound and outbound network traffic
+* Common firewall types
+* Allow and deny rules
+* Rule components such as:
+
+  * source
+  * destination
+  * protocol
+  * port
+  * traffic direction
+  * action
+* The importance of rule order and evaluation
+* Creating and reviewing rules with **Windows Defender Firewall**
+* Managing Linux firewall rules with **`iptables`**
+* The difference between an individual firewall rule and the wider access created by multiple rules
+
+### Tools used
+
+* Windows Defender Firewall
+* Linux `iptables`
+* TryHackMe browser-based lab environment
+
+### Challenges
+
+There were no significant technical challenges during the room.
+
+Both firewall interfaces were relatively straightforward to understand and use.
+
+The larger challenge came from thinking about what a firewall rule actually communicates.
+
+A rule such as:
+
+> Allow `192.168.1.0/24` → Any → TCP 80 → Outbound
+
+describes a specific permission at a specific control point.
+
+It tells us:
+
+* where the traffic may originate
+* where it may be sent
+* which protocol and port may be used
+* in which direction it may travel
+
+But it does not necessarily describe the complete route that traffic can take through the environment.
+
+It describes one permitted transition.
+
+The wider security consequence may only become visible when that rule is combined with other rules, systems, and network connections.
+
+### Mistakes
+
+No significant mistakes were made during the room.
+
+The commands and interfaces behaved as expected, and the guided exercises were easy to follow.
+
+The main observation was not about doing something incorrectly, but about recognizing that reading individual rules may not be enough to understand the access they collectively produce.
+
+### Lessons learned
+
+* A firewall rule represents a **local permission**
+
+* A permitted connection does not automatically reveal the complete path available beyond it
+
+* Rules that appear reasonable individually may create unexpected access when combined
+
+* Broad destinations such as `Any` increase the number of possible routes without explicitly showing them
+
+* Reviewing firewall security requires more than checking whether each individual rule looks valid
+
+* The important question is not only:
+
+  > “Is this rule allowed?”
+
+  but also:
+
+  > “What path does this rule help create?”
+
+* Linux `iptables` felt considerably simpler and more direct than the Windows interface
+
+### Reflection
+
+The practical work in this room was straightforward.
+
+Windows Defender Firewall worked as expected. Linux `iptables` was especially simple and direct.
+
+I preferred the Linux approach.
+
+In every way.
+
+The rules section was what stayed with me.
+
+Firewall rules are normally presented as individual decisions:
+
+* allow this source
+* deny that port
+* permit this destination
+* block this direction
+
+That makes sense from the perspective of configuring a firewall.
+
+But the actual security consequence does not always exist inside one rule.
+
+It may appear only when several permissions are connected.
+
+A rule can therefore be correct in isolation while still contributing to an unintended route through the environment.
+
+This raises a question:
+
+> Is reviewing firewall rules individually enough when access is created through their composition?
+
+A firewall rule tells us what may cross one boundary.
+
+It does not necessarily tell us where that traffic can ultimately go.
+
+That distinction feels important.
+
+The individual rule may be the unit of configuration, but the complete path may be the unit of consequence.
+
+### Next focus
+
+* Practice reading firewall rules without relying on guided explanations
+* Become more comfortable with `iptables` syntax and rule ordering
+* Learn how stateful firewalls track established connections
+* Explore how multiple firewall rules interact across different systems
+* Pay attention to the difference between:
+
+  * a permitted connection
+  * a complete reachable path
+* Continue asking:
+
+  > “What access exists when these rules are combined?”
+
+### Learning Signals
+
+* **Effort:** 1/5
+* **Clarity:** 4/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+**Final thought**
+
+A firewall rule describes a permission.
+
+It does not always describe the path that permission helps create.
+
+> A rule can make sense by itself and still contribute to access nobody intended.
+
+---
+
+*A silent marker of progress. Ask me anything.*
