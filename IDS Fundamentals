@@ -1,0 +1,164 @@
+## Learning Log — TryHackMe: IDS Fundamentals
+
+**Platform:** TryHackMe
+**Date:** 2026-07
+**Difficulty:** Easy
+**Time spent:** ~30 minutes
+
+### Summary
+
+Completed the *IDS Fundamentals* room, focused on how Intrusion Detection Systems monitor activity that has already made it past preventative controls, along with hands-on exposure to **Snort**.
+
+The room followed naturally from *Firewall Fundamentals*.
+
+A firewall determines whether traffic is permitted to cross a boundary.
+
+An IDS asks a different question:
+
+> “Now that the traffic is here, what is it doing?”
+
+The room covered:
+
+**IDS fundamentals → IDS types → Detection methods → Snort → Rules → Practical detection**
+
+The most useful part was seeing how detection ultimately depends on turning suspicious behavior into something a system can recognize.
+
+### Key concepts reviewed
+
+* The purpose of an **Intrusion Detection System (IDS)**
+* The distinction between prevention and detection
+* **Network-based IDS (NIDS)**
+* **Host-based IDS (HIDS)**
+* Signature-based detection
+* Anomaly-based detection
+* Alerts and detection events
+* How **Snort** operates as a network IDS
+* Default Snort rules
+* Custom Snort rules
+* Rule components and matching conditions
+* Monitoring network traffic for specific patterns
+
+### Tools used
+
+* Snort
+* TryHackMe browser-based lab environment
+
+### Challenges
+
+The individual concepts were relatively straightforward.
+
+The more interesting challenge was understanding what an IDS actually knows.
+
+An IDS does not inherently understand that something is malicious.
+
+It observes evidence.
+
+A signature-based system recognizes activity because someone has defined a pattern that represents something worth detecting.
+
+That means detection quality depends heavily on the relationship between:
+
+**behavior → observable evidence → detection rule**
+
+If the behavior does not produce the expected evidence, or the rule does not describe that evidence correctly, the activity may go undetected.
+
+### Mistakes
+
+No significant mistakes stood out during the room.
+
+The practical exercises reinforced the importance of reading detection rules carefully rather than treating an alert as something that appears automatically simply because malicious activity occurred.
+
+### Lessons learned
+
+* An IDS and a firewall solve different problems
+
+* A firewall can allow legitimate-looking traffic that later becomes malicious
+
+* Detection provides another layer after preventative controls have already made their decision
+
+* An IDS observes and alerts; it does not necessarily stop the activity it detects
+
+* Signature-based detection depends on knowing what evidence to look for
+
+* A detection rule is effectively a claim about observable behavior:
+
+  > “If I see this pattern, something important may be happening.”
+
+* A successful rule match does not automatically prove malicious intent
+
+* A failed rule match does not automatically prove that nothing malicious happened
+
+* Detection therefore has both sides:
+
+  * identifying what should trigger
+  * understanding what might escape the trigger
+
+### Reflection
+
+This room connected well with *Firewall Fundamentals*.
+
+The firewall room made me think about **paths**.
+
+An individual firewall rule describes one permitted transition, while the actual consequence can emerge from several permissions working together.
+
+IDS introduced a related problem from a different direction.
+
+Detection rules describe observable evidence.
+
+But observable evidence is not necessarily identical to the behavior we actually care about.
+
+A Snort rule may correctly detect a particular network pattern.
+
+The more important question becomes:
+
+> “How confidently does this pattern represent the behavior we intended to detect?”
+
+That distinction matters.
+
+Security controls are often expressed as rules, signatures, thresholds, and conditions.
+
+Those are representations of reality.
+
+They are not reality itself.
+
+This makes detection engineering interesting to me because the problem is not simply writing a rule that fires.
+
+The problem is determining whether the rule reliably distinguishes meaningful behavior from everything else.
+
+A detection that never fires is useless.
+
+A detection that fires constantly is also close to useless.
+
+The value is in the evidence.
+
+### Next focus
+
+* Become more comfortable reading Snort rules without guided explanations
+* Practice writing custom detection rules
+* Understand Snort rule options in greater depth
+* Explore false positives and false negatives
+* Learn how IDS alerts feed into SIEM workflows
+* Compare signature-based detection with behavioral and anomaly-based approaches
+* Continue asking:
+
+  > “What observable evidence proves the behavior I am trying to detect?”
+
+### Learning Signals
+
+* **Effort:** 1/5
+* **Clarity:** 4/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+**Final thought**
+
+A firewall asks whether traffic should be allowed through.
+
+An IDS asks what that traffic does after it arrives.
+
+> Detection begins when permitted activity stops behaving as expected.
+
+---
+
+*A silent marker of progress. Ask me anything.*
