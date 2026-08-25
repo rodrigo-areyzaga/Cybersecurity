@@ -1,0 +1,122 @@
+## Learning Log — TryHackMe: Snort Challenge — The Basics
+
+**Platform:** TryHackMe
+**Date:** 2026-08-25
+**Difficulty:** Medium
+**Time spent:** ~3 hrs
+
+### Summary
+
+Completed the *Snort Challenge — The Basics* room using provided PCAP files and Snort rule files.
+
+The lab involved writing and troubleshooting Snort rules, running them against packet captures, and then investigating the matching traffic with command-line tools.
+
+The exercises covered:
+
+**FTP → PNG/GIF → Torrent → Rule troubleshooting → MS17-010 → Log4j**
+
+### Key concepts reviewed
+
+* Snort rule structure
+* `content`, `msg`, `sid`, `rev`, and `dsize`
+* TCP/ICMP rule headers
+* Direction operators `->` and `<>`
+* Port lists such as `[80,443]`
+* ASCII and hexadecimal payload matching
+* File signatures / magic bytes
+* FTP response codes
+* MIME types
+* Packet payload inspection
+* Base64 decoding
+* IP packet IDs
+* CVSS v2 scores
+
+### Tools used
+
+* Snort
+* tcpdump
+* strings
+* grep
+* base64
+* nano
+
+### Challenges
+
+The main difficulty was that writing rules without understanding what they represented felt mechanical.
+
+For FTP, the rules became more understandable once I connected response codes to actual protocol states:
+
+```text
+230 → successful login
+331 → username accepted, password required
+530 → failed login
+```
+
+The PNG and GIF exercises also showed why file signatures matter. Instead of trusting a filename or extension, the rule looks for bytes that identify the actual file type.
+
+### Mistakes
+
+I ran into several small rule and investigation errors:
+
+* Missing spaces or fields in Snort rule headers
+* Incorrect port-list syntax
+* Duplicate SIDs
+* Using `:` instead of `;`
+* Trying to use the unsupported `<-` direction
+* Matching lowercase hexadecimal `get` instead of uppercase HTTP `GET`
+* Initially following the wrong Base64-containing Log4j packet because multiple packets contained similar payloads
+
+The last one was especially useful: finding a matching string was not enough. I had to correlate the payload with the correct packet and IP ID.
+
+### Lessons learned
+
+* Snort rules describe observable packet characteristics.
+* A rule can be syntactically valid while still detecting the wrong thing.
+* Protocol responses can represent specific behavioral states.
+* File signatures can identify content without trusting filenames.
+* Detection is only the first step; the packet often needs further investigation.
+* `strings`, `grep`, and `tcpdump` are useful for quickly examining PCAP content.
+* Base64 is encoding, not encryption, and attacker commands can be decoded directly.
+* Multiple packets may contain similar indicators, so context and correlation matter.
+* Knowing what a detector looks for also helps explain what an attacker could change to avoid that detector.
+
+### Reflection
+
+I did not particularly enjoy manually creating Snort rules.
+
+The syntax itself feels like something that should largely be automated.
+
+What became interesting was the mechanism underneath it:
+
+> behavior → observable evidence → detection rule
+
+That also helped explain why IDS knowledge is relevant to ethical hacking. If I understand what Snort can see and what causes a rule to trigger, I also understand some of the boundaries and weaknesses of that detection.
+
+The exercises with file signatures reinforced another useful idea:
+
+> Do not trust what something claims to be. Inspect what it actually is.
+
+That principle extends beyond network packets and files and is something I want to keep in mind when working on security verification systems.
+
+### Next focus
+
+* Get faster at reading Snort rules
+* Better understand what specific packet evidence a rule is testing
+* Continue practicing PCAP investigation
+* Learn more about how IDS rules are bypassed or evaded
+* Focus less on memorizing Snort syntax and more on understanding the detection logic underneath it
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 3/5
+* **Confidence:** 3/5
+
+---
+
+**Final thought**
+
+The useful part of Snort was not memorizing rule syntax.
+
+> It was learning how to turn something that happened on a network into evidence that can be detected.
