@@ -1,0 +1,147 @@
+## Learning Log — TryHackMe: CyberChef — The Basics
+
+**Platform:** TryHackMe
+**Date:** 2026-09-02
+**Difficulty:** Easy
+**Time spent:** ~1 hr
+
+### Summary
+
+Completed the *CyberChef — The Basics* room, focused on using CyberChef to transform, decode, encode, extract, and inspect different forms of data.
+
+The tool itself is fairly simple. Most operations can be selected, dragged into a recipe, and immediately applied to an input.
+
+The larger challenge was understanding what each operation actually represents.
+
+The room covered:
+
+**CyberChef interface → Recipes → Extractors → Base encodings → Binary/decimal → URL encoding → Unix timestamps → Practical transformations**
+
+### Key concepts reviewed
+
+* CyberChef's Operations, Recipe, Input, and Output areas
+* Building and chaining recipes
+* Base64 encoding and decoding
+* Base85, Base58, and Base62
+* Binary and decimal representations
+* URL encoding and percent-encoding
+* URL decoding
+* Unix timestamps
+* ROT13
+* Extracting IP addresses
+* Extracting email addresses
+* Extracting URLs
+* Converting between different data representations
+
+### Tools used
+
+* CyberChef
+* Web browser
+
+### Challenges
+
+Using CyberChef itself was not particularly difficult.
+
+The difficulty was understanding the formats behind the operations.
+
+For example, selecting `From Base64` takes seconds. Understanding why Base64 works requires thinking about ASCII values, binary representation, 6-bit groups, and the Base64 character table.
+
+Likewise, URL decoding is easy to perform:
+
+```text
+%3A → :
+%2F → /
+%2E → .
+```
+
+But understanding why those values appear requires understanding percent-encoding and how characters are represented.
+
+The same applies to Unix timestamps, Base85, Base58, Base62, binary, decimal, and the other formats available in CyberChef.
+
+There is a substantial amount of knowledge hidden behind operations that appear to be very simple buttons.
+
+### Mistakes
+
+I did not run into any significant problems operating CyberChef itself.
+
+Most of the slowdown came from stopping to understand what the different formats meant rather than simply applying the correct operation and moving on.
+
+That distinction felt important.
+
+Getting the expected output from a tool does not necessarily mean I understand what happened to the data.
+
+### Lessons learned
+
+* CyberChef provides a simple interface over many different data transformations.
+* A recipe is a sequence of operations applied to an input.
+* Operations can be chained together instead of performing each transformation manually.
+* Base64 is an encoding, not encryption.
+* Different base encodings represent binary data using different character sets.
+* URL percent-encoding replaces certain characters with encoded representations.
+* Unix timestamps represent time numerically relative to the Unix epoch.
+* CyberChef can extract useful indicators such as IP addresses, URLs, and email addresses from larger datasets.
+* Recognizing the format of the input is often more important than knowing where the button is.
+* A transformation tool can perform the conversion for me, but I still need enough knowledge to understand whether the transformation makes sense.
+
+### Reflection
+
+CyberChef itself is surprisingly straightforward.
+
+Most of the workflow is essentially:
+
+> input → choose operation → build recipe → inspect output
+
+What is considerably less straightforward is understanding the data.
+
+There is a big difference between knowing:
+
+> “Use `From Base64`.”
+
+and understanding:
+
+> “This data appears to be Base64, this is how that representation works, and decoding it is the appropriate transformation.”
+
+That seems much more useful from a security perspective.
+
+CyberChef removes much of the mechanical work involved in converting and inspecting data, but it does not remove the need to recognize what I am looking at.
+
+In fact, the simplicity of the tool almost hides how much information sits underneath it.
+
+Base64, Base85, Base58, Base62, hexadecimal, decimal, binary, URL encoding, Unix timestamps, character encodings, and other representations can each become their own subject.
+
+So the lesson for me was not really how to use CyberChef.
+
+The interface can be learned very quickly.
+
+The real lesson was:
+
+> The transformation may be easy. Recognizing and understanding the representation is the skill.
+
+That also connects well with the previous Snort work. During packet investigation, I encountered things such as hexadecimal values, file signatures, HTTP payloads, and Base64-encoded commands.
+
+CyberChef gives me a convenient way to investigate those representations without manually converting everything, while still requiring me to understand enough about the data to know what operation to apply.
+
+### Next focus
+
+* Get better at recognizing common encodings by sight
+* Understand Base64 beyond simply encoding and decoding it
+* Become more comfortable moving between ASCII, binary, decimal, and hexadecimal
+* Learn when Base58, Base62, and Base85 are commonly encountered
+* Better understand URL percent-encoding
+* Use CyberChef during future packet, log, malware, and web-security investigations
+* Focus on understanding the representation rather than memorizing CyberChef operations
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 1/5
+* **Confidence:** 3/5
+
+---
+
+**Final thought**
+
+CyberChef makes transforming data easy.
+
+> The harder—and more valuable—skill is recognizing what the data is and understanding why a particular transformation makes sense. Ask me anything
