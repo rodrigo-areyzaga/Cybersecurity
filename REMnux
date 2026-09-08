@@ -1,0 +1,150 @@
+## Learning Log — TryHackMe: REMnux — Getting Started
+
+**Platform:** TryHackMe
+**Date:** 2026-09-08
+**Difficulty:** Easy (more tedious than difficult)
+**Time spent:** ~2 hours
+
+### Summary
+
+Completed the *REMnux: Getting Started* room focused on introducing several tools commonly used for **malware analysis and artifact inspection**.
+
+The room covered a basic analysis workflow using:
+
+**File inspection → Extract artifacts → Parse data → Simulate network activity → Inspect memory → Decode findings**
+
+The main tools used were **oledump.py, INetSim, Volatility, strings, and CyberChef**.
+
+Technically, the room was not particularly difficult. The bigger challenge was staying engaged with the workflow. It took two days mostly because of scheduling, although I could only take so much manual parsing at a time.
+
+### Key concepts reviewed
+
+* Using **REMnux** as a malware-analysis environment
+* Inspecting Microsoft Office files using **oledump.py**
+* Identifying individual data streams inside suspicious documents
+* Extracting and examining embedded content
+* Using **strings** to identify readable information inside files
+* Basic memory artifact analysis with **Volatility**
+* Using **INetSim** to simulate network services during malware analysis
+* Taking extracted or encoded data into **CyberChef**
+* Connecting information found in one tool with another analysis tool
+
+### Tools used
+
+* oledump.py
+* INetSim
+* Volatility
+* strings
+* CyberChef
+
+### Challenges
+
+* Staying engaged with large amounts of manually parsed output
+* Understanding what information was actually important versus noise
+* Connecting the workflow to the broader offensive-security / hacking process
+* Feeling like the analyst was responsible for manually connecting information that the tools could potentially structure better
+* Seeing the practical value of some tools beyond simply knowing how to operate them
+* Maintaining focus when the process felt repetitive rather than investigative
+
+### Mistakes
+
+* Initially treated some of the exercises as **commands to complete** rather than asking what information each tool was actually exposing
+* Focused too much on the amount of output instead of identifying what artifact or question I was supposed to investigate
+* Let frustration with the workflow affect how I evaluated the value of the underlying analysis
+* Expected the tools to provide more interpretation instead of recognizing that many of them primarily expose raw evidence
+
+### Lessons learned
+
+* `oledump.py` makes Microsoft Office files easier to understand by exposing their internal streams separately
+
+* Extracting an artifact is only the beginning — it may still need to be decoded or transformed before it becomes meaningful
+
+* **CyberChef becomes much more useful when there is context for what is being decoded**
+
+* Malware analysis requires separating useful evidence from large amounts of irrelevant or low-value information
+
+* There is an important difference between:
+
+  > human judgment
+
+  and
+
+  > humans manually organizing data before judgment can even begin
+
+* Knowing how raw evidence is produced is still valuable, even if better tooling could reduce the amount of manual processing
+
+### Reflection
+
+This was probably one of the more boring rooms I have completed.
+
+I understand why malware analysis is detail-oriented. Someone has to inspect artifacts, understand what happened, and connect evidence from different sources.
+
+What bothered me was how **manual** the process felt.
+
+With the number of security tools available today, I kept wondering why more of the output cannot already be separated into deterministic categories.
+
+Instead, parts of the workflow felt like:
+
+> dump an entire session on the analyst’s lap and say, “you figure it out.”
+
+That feels strangely ancient.
+
+The analyst should absolutely be responsible for interpreting evidence and deciding what it means. But I am less convinced that the analyst should also have to manually act as the integration layer between every tool producing that evidence.
+
+There should be a clearer separation between things like:
+
+* network artifacts
+* embedded content
+* execution indicators
+* memory artifacts
+* suspicious values
+* likely noise
+
+Then let the analyst investigate the relationships and make the judgment.
+
+`oledump.py` was the exception for me. Breaking a document into individual streams felt much more deterministic, and taking information from there back into **CyberChef** finally made the workflow click.
+
+That connection felt useful.
+
+The rest often felt more like digital archaeology than hacking.
+
+Maybe some of that opinion comes from frustration. There are good learning days and bad learning days.
+
+Still, I have considerably more sympathy for malware analysts now.
+
+They seem to get handed all the baggage, told to figure out what happened, and receive very little of the glory when they actually do.
+
+### Next focus
+
+* Get more comfortable using **oledump.py**
+* Continue using CyberChef when extracted artifacts require decoding or transformation
+* Understand how malware-analysis tools connect rather than learning them independently
+* Look for workflows that automate **triage and categorization** while preserving analyst judgment
+* Pay more attention to:
+
+  > “What question is this tool helping me answer?”
+
+  rather than simply:
+
+  > “What command do I run?”
+
+### Learning Signals
+
+* **Effort:** 3/5
+* **Clarity:** 3/5
+* **Frustration:** 4/5
+* **Confidence:** 3/5
+
+---
+
+**Final thought**
+
+The analyst should be responsible for figuring out **what the evidence means**.
+
+I am not convinced they should also be responsible for manually turning an unstructured pile of artifacts into evidence in the first place.
+
+Maybe that is where better tooling still has work to do.
+
+---
+
+*A silent marker of progress. Ask me anything.*
